@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>simple crystal game</title>
+
+
+
+    <!-- We link our html to the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<style>
+    #showContentStart {
+        display: none;
+    }
+
+</style>
+<body>
+
+
+
+    <!-- Container Div -->
+    <div class="container">
+
+        <!-- Jumbotron element -->
+        <div class="jumbotron">
+
+            <!-- centered text -->
+            <h1 class="text-center"><strong>TOTALLY TRIVIAL TRIVIA!</strong></h1>
+        </div>
+
+        <!-- a Bootstrap row with columns -->
+
+
+
+
+
+        <div class="row">
+            <div class="col-lg-12">
+
+
+
+
+
+
+
+                <div id="allContent">
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <div id="startButtonTime" class="text-center">
+                                <h1 class='text - center'><button id='startButton'>START</button></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="showContentStart">
+                        <div class="card card-default">
+                            <div class="card-body text-center">
+                                <h3>Who invented the telephone?</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q1" value="Bell">
+                                    <label class="form-check-label" for="inlineRadio1">Bell</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q1" value="ATT">
+                                    <label class="form-check-label" for="inlineRadio2">ATT</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q1" value="Martin Cooper">
+                                    <label class="form-check-label" for="inlineRadio2">Martin Cooper</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q1" value="Motorola">
+                                    <label class="form-check-label" for="inlineRadio2">Motorola</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card card-default">
+                            <div class="card-body text-center">
+                                <h3>What temperature does water boil at?</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q2" value="99C">
+                                    <label class="form-check-label" for="inlineRadio1">99C</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q2" value="100C">
+                                    <label class="form-check-label" for="inlineRadio2">100C</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q2" value="120C">
+                                    <label class="form-check-label" for="inlineRadio2">120C</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q2" value="1000C">
+                                    <label class="form-check-label" for="inlineRadio2">1000C</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-default">
+                            <div class="card-body text-center">
+                                <h3>Who discovered penicillin?</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q3" value="Marie Curie">
+                                    <label class="form-check-label" for="inlineRadio1">Marie Curie</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q3" value="Erwin Chargaff">
+                                    <label class="form-check-label" for="inlineRadio2">Erwin Chargaff</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q3" value="Anaximander">
+                                    <label class="form-check-label" for="inlineRadio2">Anaximander</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q3" value="Fleming">
+                                    <label class="form-check-label" for="inlineRadio2">Fleming</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card card-default">
+
+                            <div class="card-body text-center">
+                                <h3>What Spanish artist said he would eat his wife when she died?</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q4" value="Picasso">
+                                    <label class="form-check-label" for="inlineRadio1">Picasso</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q4" value="Joan Miro">
+                                    <label class="form-check-label" for="inlineRadio2">Joan Miro</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q4" value="Dali">
+                                    <label class="form-check-label" for="inlineRadio2">Dali</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q4" value="Diego Velazquez">
+                                    <label class="form-check-label" for="inlineRadio2">Diego Velazquez</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card card-default">
+                            <div class="card-body text-center">
+                                <h3>When did the First World War start?</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q5" value="1914">
+                                    <label class="form-check-label" for="inlineRadio1">1914</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q5" value="1908">
+                                    <label class="form-check-label" for="inlineRadio2">1908</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q5" value="1918">
+                                    <label class="form-check-label" for="inlineRadio2">1918</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q5" value="1916">
+                                    <label class="form-check-label" for="inlineRadio2">1916</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="card card-default">
+                            <div class="card-body text-center">
+                                <h3>Who painted the Sistine Chapel?</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q6" value="Don Juan">
+                                    <label class="form-check-label" for="inlineRadio1">Don Juan</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q6" value="da Vinci">
+                                    <label class="form-check-label" for="inlineRadio2">da Vinci</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q6" value="Raphael">
+                                    <label class="form-check-label" for="inlineRadio2">Raphael</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q6" value="Michelangelo">
+                                    <label class="form-check-label" for="inlineRadio2">Michelangelo</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                        <div class="card card-default">
+                            <div class="card-body text-center">
+                                <h3>Who said E=mc2</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q7" value="Einstein">
+                                    <label class="form-check-label" for="inlineRadio1">Einstein</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q7" value="Newton">
+                                    <label class="form-check-label" for="inlineRadio2">Newton</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q7" value="Tesla">
+                                    <label class="form-check-label" for="inlineRadio2">Tesla</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q7" value="Hawking">
+                                    <label class="form-check-label" for="inlineRadio2">Hawking</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                        <div class="card card-default">
+                            <div class="card-body text-center">
+                                <h3>Which planet is nearest the sun?</h3>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q8" value="Pluto">
+                                    <label class="form-check-label" for="inlineRadio1">Pluto</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q8" value="Venus">
+                                    <label class="form-check-label" for="inlineRadio2">Venus</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q8" value="Mercury">
+                                    <label class="form-check-label" for="inlineRadio2">Mercury</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="q8" value="Jupiter">
+                                    <label class="form-check-label" for="inlineRadio2">Jupiter</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <div id="startButtonTime" class="text-center">
+                                    <h1 class='text - center'><button id='doneButton'>DONE</button></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Added link to the jQuery library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
